@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - Geolocalización</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-light py-4">
+    <div class="container" style="max-width: 750px;">
+        <div class="card shadow p-4 rounded-3">
+            <h2 class="text-center text-primary mb-3 fw-bold">Historial de Recorrido</h2>
+            
+            <div id="map" class="border rounded mb-3" style="height: 380px; width: 100%;"></div>
+            
+            <div class="d-flex justify-content-center gap-2 mb-4">
+                <button id="btnIniciar" class="btn btn-success">Iniciar</button>
+                <button id="btnDetener" class="btn btn-danger" disabled>Detener</button>
+                <button id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
+            </div>
+            
+            <h5 class="fw-bold text-secondary">Historial de Posiciones</h5>
+            <div class="list-container border rounded bg-white">
+                <ul id="historialList" class="list-group list-group-flush small">
+                    <li id="empty" class="list-group-item text-muted text-center">Sin registros. Inicie el seguimiento.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3 text-muted small">
+            Danilo Josué Mejia — 46789584
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
