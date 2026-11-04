@@ -1,0 +1,25 @@
+.App {
+  text-align: center; /* Centra todo el contenido, incluyendo el título y los botones */
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+.btn-verde {
+  background-color: #5cb85c; /* El tono verde característico de la imagen */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px; /* Agrega espacio entre los botones */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Efecto opcional al pasar el mouse por encima */
+.btn-verde:hover {
+  background-color: #4cae4c;
+}
